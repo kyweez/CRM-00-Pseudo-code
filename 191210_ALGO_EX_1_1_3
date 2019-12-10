@@ -12,17 +12,17 @@ debut
 		count <-- 1
 		ecrire “Entrer le premier nombre entier”
 		lire integer
-		tmp <-- tmp + integer
+		temp <-- temp + integer
 		TANT QUE choice1 = 'O' FAIRE
 			ecrire “Entrer le nombre suivant”
 			lire integer
-			tmp <-- tmp + integer
+			temp <-- temp + integer
 			count <-- count + 1
 			ecrire "Souhaitez-vous ajouter un nombre au calcul ?(O/N)”
 			lire choice1
 		FIN TANT QUE
-		temp <-- temp / count
-		ecrire “La moyenne de tous les nombres saisis est de :”, temp,”\n”
+		result <-- temp / count
+		ecrire “La moyenne de tous les nombres saisis est de :”, result,”\n”
 		ecrire “Souhaitez-vous faire un autre calcul ? (O/N)”
 		lire choice2
 	FIN TANT QUE
