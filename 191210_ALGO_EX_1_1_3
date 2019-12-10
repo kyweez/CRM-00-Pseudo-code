@@ -1,0 +1,30 @@
+debut
+	entier integer, temp, count
+	reel result
+	caractere choice1, choice2
+
+	choice1 <-- 'O'
+	choice2 <-- 'O'
+
+	ecrire “Programme de calcul de la moyenne\n”
+	TANT QUE choice2 = 'O' FAIRE
+		temp <-- 0
+		count <-- 1
+		ecrire “Entrer le premier nombre entier”
+		lire integer
+		tmp <-- tmp + integer
+		TANT QUE choice1 = 'O' FAIRE
+			ecrire “Entrer le nombre suivant”
+			lire integer
+			tmp <-- tmp + integer
+			count <-- count + 1
+			ecrire "Souhaitez-vous ajouter un nombre au calcul ?(O/N)”
+			lire choice1
+		FIN TANT QUE
+		temp <-- temp / count
+		ecrire “La moyenne de tous les nombres saisis est de :”, temp,”\n”
+		ecrire “Souhaitez-vous faire un autre calcul ? (O/N)”
+		lire choice2
+	FIN TANT QUE
+	ecrire “\nAppuyez sur une touche pour quitter.”	
+fin
