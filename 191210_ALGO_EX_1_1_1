@@ -1,0 +1,13 @@
+debut
+	entier a, b
+	reel tmp
+	
+	ecrire “Programme de calcul de la moyenne de 2 nombres\n”
+	ecrire “Entrer le premier nombre”
+	lire a
+	ecrire “Entrer le second nombre”
+	lire b
+	tmp <-- (a+b)/2
+	ecrire “la Moyenne de ”, a,” et “, b,” est de :”, tmp,”\n”
+	ecrire '\nAppuyez sur une touche pour quitter.'	
+fin
