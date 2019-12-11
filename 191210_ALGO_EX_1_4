@@ -1,0 +1,19 @@
+/*
+Lire 2 nombres a et b.
+Mettre le contenu de a dans b et celui de b dans a.
+*/
+
+debut
+	entier 	a, b, tmp
+	
+	ecrire "Ecrire la valeur de a"
+	lire a
+	ecrire "a = ",a
+	ecrire "Ecrire la valeur de b"
+	lire b
+	ecrire "b = ",b
+	tmp <-- a
+	a <-- b
+	b <-- tmp
+	ecrire "Ecrire la nouvelle valeur de a est ",a," et la nouvelle valeur de b est ",b
+fin
