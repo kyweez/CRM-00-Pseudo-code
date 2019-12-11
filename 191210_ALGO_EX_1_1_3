@@ -1,7 +1,7 @@
 debut
-	entier integer, temp, count
-	reel result
-	caractere choice1, choice2
+	entier 	integer, temp, count
+	reel 		result
+	caractere	choice1, choice2
 
 	choice1 <-- 'O'
 	choice2 <-- 'O'

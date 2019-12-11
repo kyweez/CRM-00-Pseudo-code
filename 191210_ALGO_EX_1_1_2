@@ -1,7 +1,7 @@
 debut
-	entier a, b
-	reel tmp
-	caractere c
+	entier 	a, b
+	reel 		tmp
+	caractere 	c
 
 	c <-- O
 	ecrire “Programme de calcul de la moyenne de 2 nombres\n”

@@ -1,0 +1,37 @@
+/*
+Si reponse differente de O, le programme considere que c'est non.
+*/
+
+debut
+	entier 	radius
+	reel		result_area, result_volume
+	const reel	PI
+	caractere 	answer_1
+	caractere 	answer_2
+	
+	pi <-- 3.14
+	ecrire "Donnez un rayon"
+	lire radius
+	ecrire "Souhaitez vous calculer l'aire de la sphere ? (O/N)"
+	lire answer_1
+	SI answer_1 = "O" ALORS
+		result_area <-- 4*PI*radius^radius
+		ecrire "Souhaitez vous calculer le volume egalement?" 
+		lire answer_2
+		SI answer_2 = "0" ALORS
+			result_volume <-- (4*PI*radius*radius*radius)/3
+			ecrire "Avec un rayon ",radius,"l'aire de la sphere est de ",result_area,"et le volume est de ",result_volume
+		SINON
+			ecrire "Avec un rayon ",radius,"l'aire de la sphere est de ",result_area
+		FIN SI
+	SINON
+		ecrire "Souhaitez vous tout de meme calculer le volume?"
+		lire answer_2
+		SI answer_2 = "0" ALORS
+			result_volume <-- (4*PI*radius*radius*radius)/3
+			ecrire "Le volume de la sphere est de ",result_volume
+		SINON
+			ecrire "Pourquoi lancer le programme ?"
+		FIN SI    
+	FIN SI
+fin
