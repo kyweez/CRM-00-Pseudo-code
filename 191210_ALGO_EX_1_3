@@ -1,0 +1,17 @@
+/*
+Si reponse differente de O, le programme considere que c'est non.
+*/
+
+debut
+	entier 	radius, angle
+	reel		result_area
+	const reel	PI
+	
+	pi <-- 3.14
+	ecrire "Donnez la longueur du rayon du secteur"
+	lire radius
+	ecrire "Donnez l'angle du secteur"
+	lire angle
+	result_area <-- PI*radius*radius*angle/360
+	ecrire "l'aire du secteur est de ",result_area
+fin
